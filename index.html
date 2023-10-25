@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Alipress</title>
+  </head>
+  <body>
+    <header class="flex items-center absolute justify-between">
+      <div class="logo">
+        <a href="#">
+          <span class="one txt-white txt-center">ALIPRESS</span>
+          <span class="two txt-white txt-center">CARGO</span>
+        </a>
+      </div>
+      <div class="btn flex">
+        <a class="txt-center txt-white txt-mediume" href="#">Login</a>
+        <a class="txt-center txt-white border-none txt-mediume bg-purple"href="#">Join us</a>
+      </div>
+    </header>
+    <main class="flex items-center justify-between">
+        <div class="title txt-white">
+          <h1>Ship your package anywhere. Simple, easy and fast.</h1>
+        </div>
+        <div class="right-hero-main">
+          <h2>Where do you want to send</h2>
+          <form action="#">
+            <div class="form-label-input flex justify-between">
+              <div class="label-input flex justify-between">
+                <label for="PUA">Pick up address</label>
+                <img class="absolute" src="img/flight_takeoff_black_24dp 1(1).svg" />
+                <select class="border-none" name="PUA" id="PUA" required>
+                  <optgroup label="North America">
+                    <option value="pick-up-address" hidden selected disabled>Pick up address</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                  </optgroup>
+                  <optgroup label="Europe">
+                    <option value="italy">Italy</option>
+                    <option value="spain">Spain</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="label-input flex">
+                <label for="DA">Delivery address</label>
+                <img class="absolute" src="img/flight_land_black_24dp 1.svg" />
+                <select class="border-none" name="DA" id="DA" required>
+                  <optgroup label="North America">
+                    <option value="delivery address" hidden selected>Delivery address</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                  </optgroup>
+                  <optgroup label="Europe">
+                    <option value="italy">Italy</option>
+                    <option value="spain">Spain</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="label-input flex">
+                <label for="">Parcel details</label>
+                <img class="absolute" src="img/inventory_2_black_24dp 1.svg" />
+                <input class="border-none" type="text " required minlength="5" maxlength="20"/>
+              </div>
+              <div class="label-input flex">
+                <label for="">Ship date</label>
+                <img class="absolute" src="img/event_black_24dp 1.svg" />
+                <input class="border-none" type="date" required />
+              </div>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass absolute"style="color: #ffffff"></i>
+              <input class="txt-white border-none txt-mediume txt-center bg-purple" type="submit" value="search"/>
+            </div>
+          </form>
+        </div>
+    </main>
+  </body>
+</html>
