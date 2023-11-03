@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Alipress</title>
   </head>
   <body>
-    <header class="flex items-center absolute justify-between">
-      <div class="logo">
-        <a href="#">
-          <span class="one txt-white txt-center">ALIPRESS</span>
-          <span class="two txt-white txt-center">CARGO</span>
-        </a>
-      </div>
-      <div class="btn flex">
-        <a class="txt-center txt-white txt-mediume" href="#">Login</a>
-        <a class="txt-center txt-white border-none txt-mediume bg-purple"href="#">Join us</a>
+    <header class="flex space-between items-center">
+      <a class="logo text-white" href="#">
+        <span class="logo-span-one block">ALIPRESS</span>
+        <span class="logo-span-two bold block text-center">CARGO</span>
+      </a>
+      <div class="btns-header">
+        <a class="btns text-white" href="#">Login</a>
+        <a class="btns join-btn text-white bg-purple" href="#">Join us</a>
       </div>
     </header>
-    <main class="flex items-center justify-between">
-        <div class="title txt-white">
-          <h1>Ship your package anywhere. Simple, easy and fast.</h1>
-        </div>
-        <div class="right-hero-main">
+    <main>
+      <section class="hero flex justify-center items-center">
+        <h1 class="text-white bold">Ship your package anywhere. Simple, easy and fast.</h1>
+        <div class="form-search">
           <h2>Where do you want to send</h2>
-          <form action="#">
-            <div class="form-label-input flex justify-between">
-              <div class="label-input flex justify-between">
-                <label for="PUA">Pick up address</label>
-                <img class="absolute" src="img/flight_takeoff_black_24dp 1(1).svg" />
-                <select class="border-none" name="PUA" id="PUA" required>
+          <form class="form flex" action="">
+            <div class="div-input">
+              <label class="block label" for="">Pick up address</label>
+              <div class="select-input flex items-center select-one">
+                <select class="x" name="PUA" id="PUA" required>
                   <optgroup label="North America">
                     <option value="pick-up-address" hidden selected disabled>Pick up address</option>
                     <option value="usa">USA</option>
@@ -46,38 +41,115 @@
                   </optgroup>
                 </select>
               </div>
-              <div class="label-input flex">
-                <label for="DA">Delivery address</label>
-                <img class="absolute" src="img/flight_land_black_24dp 1.svg" />
-                <select class="border-none" name="DA" id="DA" required>
-                  <optgroup label="North America">
-                    <option value="delivery address" hidden selected>Delivery address</option>
-                    <option value="usa">USA</option>
-                    <option value="canada">Canada</option>
-                  </optgroup>
-                  <optgroup label="Europe">
-                    <option value="italy">Italy</option>
-                    <option value="spain">Spain</option>
-                  </optgroup>
-                </select>
-              </div>
-              <div class="label-input flex">
-                <label for="">Parcel details</label>
-                <img class="absolute" src="img/inventory_2_black_24dp 1.svg" />
-                <input class="border-none" type="text " required minlength="5" maxlength="20"/>
-              </div>
-              <div class="label-input flex">
-                <label for="">Ship date</label>
-                <img class="absolute" src="img/event_black_24dp 1.svg" />
-                <input class="border-none" type="date" required />
-              </div>
             </div>
-            <div class="search">
-              <i class="fa-solid fa-magnifying-glass absolute"style="color: #ffffff"></i>
-              <input class="txt-white border-none txt-mediume txt-center bg-purple" type="submit" value="search"/>
+          <div class="div-input">
+            <label class="block label" for="">Delivery address</label>
+            <div class="select-input flex items-center select-two">
+              <select class="x" name="PUA" id="PUA" required>
+                <optgroup label="North America">
+                  <option value="pick-up-address" hidden selected disabled>Pick up address</option>
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                </optgroup>
+                <optgroup label="Europe">
+                  <option value="italy">Italy</option>
+                  <option value="spain">Spain</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="div-input">
+            <label class="block label" for="">Parcel details</label>
+            <div class="select-input flex items-center input-one">
+              <input class="x" type="text">
+            </div>
+          </div>
+          <div class="div-input">
+            <label class="block label" for="">Ship date</label>
+            <div class="select-input flex items-center input-two">
+              <input class="x" type="date">
+            </div>
+          </div>
+            <div class="search flex bg-purple items-center">
+              <input class="text-center text-white" type="submit" value="Search">
             </div>
           </form>
         </div>
+      </section>
+      <section class="package">
+        <h2 class="package-title">How to send a <span class="bg-purple text-white">package with</span> Alirok</h2>
+        <div class="item item-one flex items-center space-between">
+          <div class="item-img item-img-one flex justify-center items-center"><img src="./img/item-img-one.png" alt=""></div>
+          <div class="item-text">
+            <div class="icon icon-one"><span>1 Quote</span></div>
+            <h3 class="title-item">Enter your origin, destination & package details</h3>
+            <div class="paragraph"><p>Review the rates & services and pick your preferred carrier</p></div>
+          </div>
+        </div>
+        <div class="item item-two flex items-center space-between">
+          <div class="item-text">
+            <div class="icon icon-two"><span>Book</span></div>
+            <h3 class="title-item">Add sender & recipient Information</h3>
+            <div class="paragraph"><p>Enter once & done, we will keep you posted about the status of your package</p></div>
+          </div>
+          <div class="item-img item-img-two flex justify-center items-center"><img src="./img/item-img-two.png" alt=""></div>
+        </div>
+        <div class="item item-three flex items-center space-between">
+          <div class="item-img item-img-three flex justify-center items-center"><img src="./img/item-img-two.png" alt=""></div>
+          <div class="item-text">
+            <div class="icon icon-three"><span>Ship</span></div>
+            <h3 class="title-item">Complete payment and print your label</h3>
+            <div class="paragraph"><p>Attach the label to the package and we will pick up at your address</p></div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer">
+      <div class="footer-top">
+        <div class="logo-footer" >
+          <a class="logof" href="#">
+            <span>ALIPRESS</span>
+            <span class="i">CARGO</span>
+          </a>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="nav-footer">
+          <div class="company">
+            <h2>company</h2>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Mobile</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affilates</a></li>
+            </ul>
+          </div>
+          <div class="more">
+            <h2>More</h2>
+            <ul>
+              <li><a href="#">Airlinefees</a></li>
+              <li><a href="#">Airline</a></li>
+              <li><a href="#">Low fare tips</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="app">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <div class="appliction">
+            <span>Discover our app</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
   </body>
 </html>
