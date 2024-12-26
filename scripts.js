@@ -1,8 +1,5 @@
 "use strict";
 
-// COMMIT MESSAGE
-// Refactor address selection options: Added default hidden options and improved code readability with helper functions
-
 // DATA:
 const countries = [
   "United States",
