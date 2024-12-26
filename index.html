@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Alipress Cargo - Fast & Easy Package Shipping</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Alipress</title>
+    <meta
+      name="description"
+      content="Alipress Cargo offers simple, easy, and fast shipping solutions for your packages to anywhere in the world."
+    />
+    <meta
+      name="keywords"
+      content="shipping, packages, delivery, logistics, Alipress Cargo, fast shipping, easy shipping, simple shipping"
+    />
+    <meta name="language" content="English" />
+    <meta name="author" content="Dakir Zakaria" />
+    <meta
+      property="og:title"
+      content="Alipress Cargo - Fast & Easy Package Shipping"
+    />
+    <meta property="og:site_name" content="Alipress Cargo" />
+    <meta property="og:url" content="https://alipress-cargo.vercel.app/" />
+    <meta
+      property="og:description"
+      content="Alipress Cargo provides easy and fast shipping solutions to deliver your packages worldwide with reliability and speed."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/og-image.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./scripts.js" defer></script>
   </head>
   <body>
-    <header class="container">
-      <a href="#" class="logo" aria-label="Alipress_Logo">
-        <span>ALIPRESS</span>
-        <span>CARGO</span>
+    <header class="header container">
+      <a href="#" class="logo">
+        <span>Alipress</span>
+        <span>Cargo</span>
       </a>
-      <div class="header_buttons">
-        <a href="#" class="button login_button" aria-label="Login_Button">Login</a>
-        <a href="#" class="button join_button" aria-label="Join_Us_Button">Join us</a>
-      </div>
+      <ul class="buttons-wrapper">
+        <li>
+          <a href="#" class="login-button">Login</a>
+        </li>
+        <li>
+          <a href="#" class="join-button">Join us</a>
+        </li>
+      </ul>
     </header>
     <main>
       <section class="hero">
-        <div class="hero_container container">
+        <div class="hero-container container">
           <h1>Ship your package anywhere. Simple, easy and fast.</h1>
-          <div class="hero_form">
+          <form>
             <h2>Where do you want to send</h2>
-            <form action="">
-              <div class="inputs">
-                <label for="pad">
-                  Pick up address
-                  <div class="input_and_icon">
-                    <img src="./images/input_icon_one.png" alt="Icon" loading="lazy">
-                    <select class="input" name="pad" id="pad" required>
-                      <optgroup label="North America">
-                        <option value="pick-up-address" hidden selected disabled>Pick up address</option>
-                        <option value="usa">USA</option>
-                        <option value="canada">Canada</option>
-                      </optgroup>
-                      <optgroup label="Europe">
-                        <option value="italy">Italy</option>
-                        <option value="spain">Spain</option>
-                      </optgroup>
-                    </select>
-                  </div>
+            <ul class="inputs-list-wrapper">
+              <li>
+                <label for="pickup-address"
+                  >Pick up address
+                  <select
+                    name="pickup-address"
+                    id="pickup-address"
+                    required
+                  ></select>
                 </label>
-                <label for="da">
-                  Delivery address
-                  <div class="input_and_icon">
-                    <img src="./images/input_icon_two.png" alt="Icon" loading="lazy">
-                    <select class="input" name="pad" id="pad" required>
-                      <optgroup label="North America">
-                        <option value="pick-up-address" hidden selected disabled>Pick up address</option>
-                        <option value="usa">USA</option>
-                        <option value="canada">Canada</option>
-                      </optgroup>
-                      <optgroup label="Europe">
-                        <option value="italy">Italy</option>
-                        <option value="spain">Spain</option>
-                      </optgroup>
-                    </select>
-                  </div>
+              </li>
+              <li>
+                <label for="delivery-address"
+                  >Delivery address
+                  <select
+                    name="delivery-address"
+                    id="delivery-address"
+                    required
+                  ></select>
                 </label>
-                <label for="pd">
-                  Parcel details
-                  <div class="input_and_icon">
-                    <img src="./images/input_icon_three.png" alt="Icon" loading="lazy">
-                    <input class="input" type="text" placeholder="1 PCS 3 LBS USD 66.00">
-                  </div>
-                </label>
-                <label for="sd">
-                  Ship date
-                  <div class="input_and_icon">
-                    <img src="./images/input_icon_four.png" alt="Icon" loading="lazy">
-                    <input class="input" type="date" required>
-                  </div>
-                </label>
-              </div>
-              <div class="button submit_button">
-                <img src="./images/search_icon.png" alt="Icon" loading="lazy">
-                <input class="input" type="submit" value="Search" aria-label="Search_Button">
-              </div>
-            </form>
-          </div>
+              </li>
+              <li>
+                <label for="parcel-details"
+                  >Parcel details<input
+                    type="text"
+                    id="parcel-details"
+                    required
+                    placeholder="1 PCS 3 LBS USD 66.00"
+                /></label>
+              </li>
+              <li>
+                <label for="ship-date"
+                  >Ship date<input type="date" id="ship-date" required
+                /></label>
+              </li>
+            </ul>
+            <button type="submit">
+              <i class="ph-bold ph-magnifying-glass"></i>
+              Search
+            </button>
+          </form>
         </div>
       </section>
     </main>
